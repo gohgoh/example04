@@ -40,6 +40,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 ]
               ),
             ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/login');
+                },
+                child: const Text("ไป login")),
             Padding(
               padding: const EdgeInsets.fromLTRB(30.0, 30.0, 30.0, 10.0),
               child: Row(
@@ -66,6 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ]
                   ),
             ),
+             
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Text("Japan is full of beautiful contrast and lives in tension with itself. One of the most beautiful tensions hangs between the booming urban life in big cities and the rest of Japan where a large population lives in harmony with nature, enjoying the seasons in rural Japan.Japan is full of beautiful contrast and lives in tension with itself. One of the most beautiful tensions hangs between the booming urban life in big cities and the rest of Japan where a large population lives in harmony with nature, enjoying the seasons in rural Japan.Japan is full of beautiful contrast and lives in tension with itself. One of the most beautiful tensions hangs between the booming urban life in big cities and the rest of Japan where a large population lives in harmony with nature, enjoying the seasons in rural Japan.", textAlign: TextAlign.justify,),
